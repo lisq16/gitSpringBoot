@@ -6,4 +6,7 @@ package com.example.gitspringboot;
  * 4
  */
 public class Test01 {
+    public void testGit(){
+
+    }
 }
