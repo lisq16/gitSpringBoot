@@ -13,4 +13,12 @@ public class BObject {
 
     @Autowired
     private AObject a;
+
+    public String bMethod(){
+        return "===============B被调用====================";
+    }
+
+    public void testA(){
+        System.out.println(a.aMethod());
+    }
 }

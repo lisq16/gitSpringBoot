@@ -23,6 +23,6 @@ public class AObject implements InitializingBean {
     }
 
     public String aMethod(){
-        return "===============AObject====================";
+        return "===============A被调用===================="+str;
     }
 }
