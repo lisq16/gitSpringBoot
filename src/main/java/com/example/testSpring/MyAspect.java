@@ -18,8 +18,11 @@ public class MyAspect {
     @Pointcut("execution(* com.example.testSpring.AObject.*(..))")
     private void pointcut() {}
 
+    @Pointcut("execution(* com.example.thread.CObject.*(..))")
+    private void pointcut01() {}
+
     @Before("pointcut()")
     public void doAfter(JoinPoint joinPoint) {
-        System.out.println("===================A类的切面开始===============");
+        System.out.println("===================切面开始===============");
     }
 }
