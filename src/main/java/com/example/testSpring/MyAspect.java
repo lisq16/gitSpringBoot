@@ -23,6 +23,6 @@ public class MyAspect {
 
     @Before("pointcut()")
     public void doAfter(JoinPoint joinPoint) {
-        System.out.println("===================切面开始===============");
+        System.out.println("===================切面结束===============");
     }
 }

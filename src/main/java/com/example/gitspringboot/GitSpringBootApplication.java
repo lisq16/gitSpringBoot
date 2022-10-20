@@ -1,14 +1,14 @@
 package com.example.gitspringboot;
 
-import com.example.testSpring.BObject;
-import com.example.thread.CObject;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
 @EnableAspectJAutoProxy
+@ImportResource(locations = {"classpath:springConfig.xml"})
 public class GitSpringBootApplication {
 
     public static void main(String[] args) throws InterruptedException {
@@ -16,8 +16,8 @@ public class GitSpringBootApplication {
 
 //        BObject b = (BObject) applicationContext.getBean("BObject");
 //        b.testA();
-        CObject c = (CObject) applicationContext.getBean("CObject");
-        c.test01();
+//        AObject c = (AObject) applicationContext.getBean("AObject");
+//        c.aMethod();
     }
 
 }

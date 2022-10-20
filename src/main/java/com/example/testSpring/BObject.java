@@ -1,6 +1,5 @@
 package com.example.testSpring;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,14 +10,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class BObject {
 
-    @Autowired
-    private AObject a;
+//    @Autowired
+//    private AObject a;
 
     public String bMethod(){
         return "===============B被调用====================";
     }
 
-    public void testA(){
-        System.out.println(a.aMethod());
-    }
+//    public void testA(){
+//        System.out.println(a.aMethod());
+//    }
 }
