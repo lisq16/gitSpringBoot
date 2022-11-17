@@ -9,19 +9,21 @@ public class MyEnum {
 
     public  enum MyEnum01 {
 
-        RED("Red1"),
-        GREEN("Green1"),
-        BLUE("Blue");  //枚举对象必须写下第一行，否则报错
+        RED("red1","RED1"),
+        GREEN("green1","GREEN1"),
+        BLUE("blue1","BLUE1");  //枚举对象必须写下第一行，否则报错
         private String info; //定义info属性(信息)
+        private String desc;
 
-        private MyEnum01(String info){ //定义有参构造
+        private MyEnum01(String info,String desc){ //定义有参构造
             this.info = info;
+            this.desc = desc;
         }
         public String getInfo(){
             return this.info;
         }
         public String toString() {
-            return this.info;
+            return this.info+","+this.desc;
         }
 
     }

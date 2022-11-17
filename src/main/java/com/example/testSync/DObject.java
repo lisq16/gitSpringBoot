@@ -20,7 +20,6 @@ public class DObject {
         System.out.println("D====ok");
     }
 
-    @Async
     public void testD02() throws InterruptedException {
         testAsync();
         System.out.println("D02====ok");

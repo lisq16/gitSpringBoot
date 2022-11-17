@@ -12,13 +12,20 @@ public class TestEnum {
     public static <T extends Enum<T>> void  test(Class<T> enumData) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         Method info = enumData.getMethod("getInfo");
         for (T e: enumData.getEnumConstants()) {
-            String a = (String) info.invoke(e,null);
+            String a = (String) info.invoke(e);
             System.out.println(a);
         }
     }
 
+    public static  void  test01(Class<? extends Enum> enumData) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        Method info = enumData.getMethod("getInfo");
+        for (Enum e: enumData.getEnumConstants()) {
+            String a = (String) info.invoke(e);
+            System.out.println(a);
+        }
+    }
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
-        test(MyEnum.MyEnum01.class);
+        test01(MyEnum.MyEnum01.class);
     }
 
 }
