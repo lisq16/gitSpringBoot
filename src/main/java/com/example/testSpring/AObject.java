@@ -14,13 +14,12 @@ public class AObject {
 
     private String str;
 
-//    @Override
-//    public void afterPropertiesSet() throws Exception {
-//        str = "ok";
-//    }
+    public void setAbc(String bcd) {
+        System.out.println(bcd);
+    }
 
-    public String aMethod(){
+    public String aMethod() {
         System.out.println("===============A被调用====================");
-        return "===============A被调用===================="+str;
+        return "===============A被调用====================" + str;
     }
 }

@@ -1,5 +1,6 @@
 package com.example.gitspringboot;
 
+import com.example.testSpring.AObject;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -16,7 +17,7 @@ public class GitSpringBootApplication {
 
 //        BObject b = (BObject) applicationContext.getBean("BObject");
 //        b.testA();
-//        AObject c = (AObject) applicationContext.getBean("AObject");
+        AObject c = (AObject) applicationContext.getBean("AObject");
 //        c.aMethod();
     }
 
