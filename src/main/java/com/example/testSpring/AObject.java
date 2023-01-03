@@ -16,6 +16,7 @@ public class AObject implements InitializingBean {
     private BObject b;
 
     private String str;
+    private String str1;
 
     @Override
     public void afterPropertiesSet() throws Exception {
@@ -24,5 +25,13 @@ public class AObject implements InitializingBean {
 
     public String aMethod(){
         return "===============A被调用===================="+str;
+    }
+
+    public String getStr1() {
+        return str1;
+    }
+
+    public void setStr1(String str1) {
+        this.str1 = str1;
     }
 }
