@@ -2,7 +2,7 @@ package com.example.gitspringboot;
 
 import com.example.testSpring.AObject;
 import com.example.testSpring.BObject;
-import com.example.testSpring.Test02;
+//import com.example.testSpring.Test02;
 import com.example.testSync.DObject;
 import com.example.thread.CObject;
 import org.springframework.boot.SpringApplication;
@@ -28,9 +28,9 @@ public class GitSpringBootApplication {
         URL resource = loader.getResource("");
         System.out.println(resource.getPath());
         System.out.println(new File(resource.getPath()));
-        Test02 test02 = applicationContext.getBean("test02", Test02.class);
-        test02.ok();
-        test02.ok1();
+//        Test02 test02 = applicationContext.getBean("test02", Test02.class);
+//        test02.ok();
+//        test02.ok1();
 //        AObject c = (AObject) applicationContext.getBean("AObject");
 //        c.aMethod();
 //
